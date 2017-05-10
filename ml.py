@@ -38,7 +38,9 @@ models.append(('KNN', KNeighborsClassifier()))
 models.append(('CART', DecisionTreeClassifier()))
 models.append(('NB', GaussianNB()))
 models.append(('SVM', SVC()))
-# evaluate each model in turn
+
+scoring = 'accuracy'
+
 results = []
 names = []
 for name, model in models:
